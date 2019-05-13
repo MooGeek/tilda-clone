@@ -1,9 +1,9 @@
 <VirtualHost *:80>
 	ServerName yourcontroller.domain
-	DocumentRoot /app
+	DocumentRoot /app/web
 </VirtualHost>
 
-<Directory /app/>
+<Directory /app/web/>
 	Options -Indexes
 	AllowOverride None
 	Require all granted

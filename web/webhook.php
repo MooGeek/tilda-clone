@@ -2,11 +2,11 @@
 
 namespace Moogeek\TildaClone;
 
-require_once 'vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use Pheanstalk\Pheanstalk;
 
-$dotenv = \Dotenv\Dotenv::create(__DIR__);
+$dotenv = \Dotenv\Dotenv::create(__DIR__.'/..');
 $dotenv->load();
 
 $pheanstalk = Pheanstalk::create('queue-server');
