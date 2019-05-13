@@ -1,0 +1,8 @@
+version: "3.5"
+
+services:
+    app:
+
+    queue-server:
+        image: schickling/beanstalkd:latest
+        command: -b /var/lib/beanstalkd

@@ -1,0 +1,28 @@
+{
+    "name": "moogeek/tilda-remote",
+    "description": "Clone your tilda.ws project via API",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stanislav Zakratskiy",
+            "email": "szakratsky@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "moogeek/tilda-api": "^1.0",
+        "pda/pheanstalk": "^4.0",
+        "moogeek/pheanstalk-worker": "dev-master",
+        "vlucas/phpdotenv": "^3.3"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Moogeek\\TildaClone\\": "src/"
+        }
+    }
+}

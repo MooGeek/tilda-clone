@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+	ServerName yourcontroller.domain
+	DocumentRoot /app
+</VirtualHost>
+
+<Directory /app/>
+	Options -Indexes
+	AllowOverride None
+	Require all granted
+</Directory>

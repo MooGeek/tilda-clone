@@ -1,0 +1,5 @@
+/vendor
+.env
+.docker/beanstalkd/data
+.docker/apache/config/*.conf
+/static

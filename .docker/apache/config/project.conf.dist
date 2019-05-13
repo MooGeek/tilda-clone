@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+	ServerName yourproject.domain
+	DocumentRoot /app/static/PROJECT_ID
+</VirtualHost>
+
+<Directory /app/static/>
+	Options -Indexes
+	AllowOverride all
+	Require all granted
+</Directory>
